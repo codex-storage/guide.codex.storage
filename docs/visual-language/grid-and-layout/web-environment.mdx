@@ -1,0 +1,51 @@
+---
+title: Web Environment
+sidebar_position: 1
+---
+
+
+import { ExternalResourceCard, ImageGrid } from '@site/src/components/mdx';
+
+## Spacing
+
+Spacing tokens serve as the building blocks for maintaining consistency in components, grids, and page layouts. Our base unit is 8, and the spacing scale uses multiples of the base unit.
+
+![Untitled](/Untitled.png)
+
+## Grid
+
+Our web grid system is flexible. We typically structure grids and layouts based on our spacing scale.
+
+Commonly used web grids:
+
+- Desktop: 24 / 16 columns
+- Tablet: 16 / 12 columns
+- Mobile: 2 columns
+
+Gutter size - 16px.
+
+![image 1.png](/image_1.png)
+
+### Web grid templates
+
+<ExternalResourceCard
+    title="Logos templates"
+    description="www.figma.com"
+    href="https://www.figma.com/file/qH2d0UtCAcrcn23or1WgfB/Logos-templates?type=design&node-id=215%3A8&mode=design&t=0bOCaBBwhofQKq0c-1"
+    logoSrc="/icons/figma.svg"
+    style={{ maxWidth: "390px"}}
+/>
+
+## Examples
+
+### Desktop
+
+<ImageGrid md={{cols: 2, gap: "16px"}} images={[{src: "/Untitled-1.png"}, {src: "/Untitled-2.png"}, {src: "/Untitled-3.png"}, {src: "/Untitled-4.png"}]} />
+
+### Tablet
+
+<ImageGrid md={{cols: 2, gap: "16px"}} images={[{src: "/Untitled-5.png"}, {src: "/Untitled-6.png"}]} />
+
+### Mobile
+
+<ImageGrid md={{cols: 2, gap: "16px"}} images={[{src: "/Untitled-7.png"}, {src: "/Untitled-8.png"}]} />

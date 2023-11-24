@@ -1,0 +1,30 @@
+---
+title: Color
+sidebar_position: 2 
+displayed_sidebar: main
+---
+
+import { ColorCard, Grid } from "@site/src/components/mdx"
+
+# Color
+
+Our belief is that color should be used intentionally to communicate a message and evoke a specific emotion, rather than as an aesthetic choice. As a result, our color palette is minimalistic and designed to complement our typography and other visual elements.
+
+Our philosophy towards color is grounded in our core values of simplicity, functionality, and accessibility. We take inspiration from our roots in underground culture, where black and white copy machine zines were a powerful tool for change.
+
+We adhere to the W3C's Web Content Accessibility Guidelines (WCAG) to ensure that our designs are accessible to as many people as possible, regardless of their visual abilities. This includes providing sufficient color contrast and avoiding the use of color alone to convey important information. By following these guidelines, we can create designs that are inclusive and accessible for everyone.
+
+## Web-Default Color Systems
+
+In order to maintain a consistent experience for our users, we prefer to rely on the default color systems available on each platform or device. This approach ensures that our designs are accessible to the widest possible audience and that they adhere to the platform conventions. Additionally, by relying on the default color systems, we reduce the amount of data that our users need to consume, making our designs more accessible and faster to load.
+
+We only allow non-default colors when black and white are not enough to fulfill a specific function or need, such as the blue color of hyperlinks.
+
+<Grid xs={{ cols: 1, wrap: true, gap: '16px' }} md={{ cols: 2 }}>
+  <Grid.Item xs={1}>
+    <ColorCard fullWidth title="Black" color="rgb(var(--lsd-theme-primary))" variables={[{ name: "Hex", value: "#000" }, { name: "RGB", value: "0, 0, 0" }]} />
+  </Grid.Item>
+  <Grid.Item xs={1}>
+    <ColorCard fullWidth title="White" color="rgb(var(--lsd-theme-secondary))" variables={[{ name: "Hex", value: "#fff" }, { name: "RGB", value: "255, 255, 255" }]} />
+  </Grid.Item>
+</Grid>

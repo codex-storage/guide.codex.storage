@@ -1,0 +1,43 @@
+---
+title: Web Environments
+sidebar_position: 1
+---
+
+import { StorybookDemo } from '@site/src/components/mdx';
+
+# Web Environments
+
+In our web environments, we lean toward a concept inspired by the decentralized mental model. Instead of imposing a singular font choice, we rely on the default web fonts present on users' browsers and systems. Our strategy offers key advantages:
+
+1. **Accessibility**: We design in a way that works harmoniously with whatever default font a user's system provides. Our commitment is to ensure that our design retains its integrity and functionality regardless of the specific default font. By not making an overriding decision, we respect the inherent variability and trust that our content will be consistently presented and accessed.
+2. **Optimization**: Bypassing the need for additional font downloads ensures quicker page load times, crucial for those with limited internet bandwidth or in challenging network conditions.
+
+By specifying the font category (serif, sans-serif, or mono) in your CSS, the user's operating system is allowed to determine the best font choice. This approach also guarantees extensive language script support.
+
+```
+/**
+ * System font stack for sans-serif fonts
+ *
+ * `-apple-system` ('San Francisco' font) – Support Safari 9+ macOS and iOS, Firefox macOS
+ * `BlinkMacSystemFont` ('San Francisco' font) – Chrome 48+ macOS and iOS
+ * `Segoe UI` – Windows Vista & newer
+ * `Roboto` – Android 4.0+
+ * `Lato` – Wikimedia Design choice, OFL licensed
+ * `Helvetica, Arial, sans-serif` – (Generic) Web fallback
+ * Note that standard `system-ui` value has resulted in unresolved side-effects in certain OS/language combinations as of now and is therefore not included.
+ */
+
+font-family: Serif
+```
+
+| Font Type | Suggested Default Font Family |
+| --- | --- |
+| Mono | Consolas (Windows), Monaco (macOS), DejaVu Sans Mono (Linux) |
+| Serif | Georgia (Windows), Times New Roman (macOS), DejaVu Serif (Linux) |
+| Sans-Serif | Segoe UI (Windows), Helvetica (macOS), DejaVu Sans (Linux) |
+
+## Examples
+
+### LSD type stack
+
+<StorybookDemo name="Typography" docId="themeprovider--docs" storybookUrl="https://main--63e4f71c39dc65c5c703c1e8.chromatic.com" storyId="themeprovider--typography" globalTypes={{}} componentProperties={[]} globalControls={["themeFont"]} />
