@@ -7,8 +7,8 @@ const downloadRemoteContent =
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Waku',
-  url: 'https://guide.waku.org/',
+  title: 'Codex',
+  url: 'https://guide.codex.storage/',
   baseUrl: '/',
 
   markdown: {
@@ -28,7 +28,7 @@ const config = {
       '@acid-info/logos-docusaurus-preset',
       /** @type {import('@acid-info/logos-docusaurus-preset').PluginOptions} */
       ({
-        businessUnit: 'Waku',
+        businessUnit: 'Codex',
         customSiteConfig: true,
         theme: {
           name: 'default',
@@ -56,9 +56,7 @@ const config = {
       '@docusaurus/plugin-ideal-image',
       {
         quality: 100,
-        max: 1080,
-        min: 400,
-        steps: 2,
+        sizes: [400],
         disableInDev: true,
       },
     ],
@@ -75,7 +73,7 @@ const config = {
         outDir: 'docs',
         sourceDir: 'docs',
         keepLocal: ['./visual-language/logo.mdx'],
-        keepStatic: ['waku/**/*'],
+        keepStatic: ['codex/**/*'],
       }),
     ]),
   ],
@@ -102,24 +100,28 @@ const config = {
         ],
       },
       footer: {
-        copyright: 'Waku @2023<br/>All Rights Reserved.',
+        copyright: 'Codex @2023<br/>All Rights Reserved.',
         links: [
           {
             items: [
               {
-                href: 'https://twitter.com/waku_org',
+                href: 'https://twitter.com/Codex_storage',
                 label: 'Twitter',
               },
               {
-                href: 'https://discord.waku.org/',
+                href: 'https://discord.gg/codex-storage',
                 label: 'Discord',
               },
               {
-                href: 'https://docs.waku.org',
+                href: 'https://docs.codex.storage',
                 label: 'Docs',
               },
               {
-                href: 'https://github.com/waku-org',
+                href: 'https://blog.codex.storage',
+                label: 'Blog',
+              },
+              {
+                href: 'https://github.com/codex-storage',
                 label: 'Github',
               },
             ],
