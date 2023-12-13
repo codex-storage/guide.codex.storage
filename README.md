@@ -88,6 +88,49 @@ For additional customization options, please refer to the [Docusaurus Configurat
 
 To add a document, create a `.md` or `mdx` file within the `docs` directory. You can use [Frontmatter](https://docusaurus.io/docs/markdown-features#front-matter) to add metadata to your markdown file.
 
+This repository extends content of the [Logos Brand Guidelines](https://github.com/acid-info/guide.logos.co) by leveraging the [Docusaurus Remote Content plugin](https://github.com/acid-info/logos-docusaurus-plugins/tree/main/packages/docusaurus-remote-content). The plugin downloads the content from the remote repository into this repository. To retrieve the content, run the following command:
+
+```bash
+yarn docusaurus remote-content download
+```
+
+This command automatically downloads content from the remote repository, replacing the local content in the `docs` directory and static files located in the `static` directory. However, if you wish to retain specific local files, follow these steps:
+
+1. Open `docusaurus.config.js` in your project.
+
+2. Locate the configuration for the `@acid-info/docusaurus-remote-content` plugin.
+
+3. Add the paths of the local files you want to keep to either the `keepLocal` or `keepStatic` properties.
+
+   - Paths in `keepLocal` should be relative to the `docs` directory at the root of this repository.
+   - Paths in `keepStatic` should be relative to the `static` directory at the root of this repository.
+
+Here are some examples using glob patterns:
+
+- To keep a single file: `./visual-language/logo.mdx`
+- To keep an entire directory: `./visual-language/**/*`
+
+If you want to exclude specific files or directories from being copied from the remote repository, use the `excludeRemote` property. For instance, to exclude the `./visual-language/lsd/` directory, modify the plugin configuration as follows:
+
+```javascript
+plugins: [
+  [
+    '@acid-info/docusaurus-remote-content',
+    /** @type {import('@acid-info/docusaurus-remote-content').PluginOptions} */
+    ({
+      remote: {
+        type: 'zip',
+        url:
+          'https://github.com/acid-info/guide.logos.co/archive/refs/heads/develop.zip',
+        dir: 'guide.logos.co-develop',
+      },
+      outDir: 'docs',
+      sourceDir: 'docs',
+      excludeRemote: ['./visual-language/lsd/**/*']
+    }),
+  ],
+],
+```
 
 ## Docusaurus Config
 

@@ -19,10 +19,10 @@
     satori "^0.10.1"
     sharp "^0.32.1"
 
-"@acid-info/docusaurus-remote-content@^1.0.0-alpha.124":
-  version "1.0.0-alpha.124"
-  resolved "https://registry.yarnpkg.com/@acid-info/docusaurus-remote-content/-/docusaurus-remote-content-1.0.0-alpha.124.tgz#93e67cee5cf046a4a6c4ffbb5e38a67b28357c27"
-  integrity sha512-WAjTpZwvPGVAgNKXAC/1mCYm0txBf9GLFewQsxoxx0vcFxBDAQUv2WJ1OpXej0jPvlaIVymSNo/6fIfGKTUN+g==
+"@acid-info/docusaurus-remote-content@^1.0.0-alpha.128":
+  version "1.0.0-alpha.128"
+  resolved "https://registry.yarnpkg.com/@acid-info/docusaurus-remote-content/-/docusaurus-remote-content-1.0.0-alpha.128.tgz#b54511ba00d44acc89640fc116ad53c497795c7c"
+  integrity sha512-9JPu1jUyXj2n+TM6LxONoIUdNF8WGHNmFNxdMImAJVQIzaCfu1o+mtYhMG/Qt1wLrCM2ledAShJbSIwnOARCNw==
   dependencies:
     axios "^1.6.2"
     fast-glob "^3.3.2"

@@ -15,7 +15,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@acid-info/docusaurus-remote-content": "^1.0.0-alpha.124",
+    "@acid-info/docusaurus-remote-content": "^1.0.0-alpha.128",
     "@acid-info/logos-docusaurus-brand-guidelines-theme": "^1.0.0-alpha.123",
     "@acid-info/logos-docusaurus-preset": "^1.0.0-alpha.121",
     "@docusaurus/plugin-ideal-image": "2.4.1",
