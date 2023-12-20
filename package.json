@@ -17,7 +17,7 @@
   "dependencies": {
     "@acid-info/docusaurus-remote-content": "^1.0.0-alpha.128",
     "@acid-info/logos-docusaurus-brand-guidelines-theme": "^1.0.0-alpha.123",
-    "@acid-info/logos-docusaurus-preset": "^1.0.0-alpha.121",
+    "@acid-info/logos-docusaurus-preset": "^1.0.0-alpha.133",
     "@docusaurus/plugin-ideal-image": "2.4.1",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
