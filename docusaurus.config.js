@@ -133,6 +133,10 @@ const config = {
                 href: '/terms',
                 label: 'Terms & conditions',
               },
+              {
+                href: '/privacy-policy',
+                label: 'Privacy Policy',
+              },
             ],
           },
         ],
