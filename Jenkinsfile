@@ -45,7 +45,10 @@ pipeline {
                 -b ${deployBranch()} \
                 -c ${deployDomain()} \
                 -p build
-            """, sandbox: false)
+              """,
+              sandbox: false,
+              envKeep: ['SSH_AUTH_SOCK'],
+            )
           }
         }
       }
